@@ -1,0 +1,77 @@
+\documentclass[a4paper, 11pt]{report}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+
+\begin{document}
+\noindent
+{\bf UNIVERSITÉ DE LOMÉ \hfill ANNÉE UNIVERSITAIRE \\
+FACULTÉ DES SCIENCES \hfill 2020-2021 }
+
+\begin{center}
+  {\bf TD de INF203 Algorithmes et Programmation Fortran}
+\end{center}
+
+\subsubsection{\underline{Exercice 1}}
+
+\noindent
+L'énergie potentielle inermoléculaire peut être calculée par la formule de Renards-jones: 
+$$ E(R) = 4\varepsilon((\sigma/R)^2 - (\sigma/R)^6) $$
+où $\varepsilon$ et $\sigma$ sont les paramètres caractéristiques des molécules mises en jeu. \\
+
+\vspace{0,5 cm}
+
+\noindent
+Écrire un programme permettant de calculer $E(R)$ pour des valeurs de $R$ comprises entre 1 et 5 \AA \hspace{0,05 cm} par pas de 0,25, les valeurs des paramètres $\varepsilon$ et $\sigma$ sont donnés dans le tableau ci-contre 
+
+
+
+\begin{table}[h]
+  \begin{flushright}
+  \begin{tabular}{||l c r||}
+    \hline
+    \hline
+    Atomes & $\varepsilon(kcla/mole)$ & $\sigma($\AA$)$ \\
+    \hline
+    \hline
+    He & 0,12 & 2,6 \\
+    Ne & 0,07 & 2,8 \\
+    Ar & 0,24 & 3,4 \\ 
+    Kr & 0,35 & 3,8 \\
+    Xe & 0,45 & 4,0 \\
+    \hline
+    \hline
+  \end{tabular}
+  \end{flushright}
+\end{table}
+
+\noindent
+Enregistre dans des fichiers (un fichier par élément gaz rare) les données dans le but de reproduirele graphe de l'énergie potentielle en foction de la position $R$. \\
+Chaque fichier doit contenir deux colonnes correspondant aux valeurs succesives de $R$ et $E(R)$
+
+\subsubsection{\underline{Exercice 2}}
+
+\noindent
+L'énergie potentielle d'une particule est donnée par la relation $ E = \frac{1}{r^3} - \frac{1}{r^2} $ .
+
+\begin{enumerate}
+  \item[(a)] Écrire un programme avec une boucle \verb|DO| permettant de calculer $E$ pour des valeurs de $r$ entières comprise entre 1 et 10. Le résultat sera enregistré dans un fichier.
+  \item[(b)] Idem avec $r$ variant de 0,5 et 5 avec un pas de 0,5.
+  \item[(c)] Idem avec $r$ variant de 0,7 à $X$ avec un pas de 0,3. La valeur de $X$ devrait être donnée à l'exécution.
+\end{enumerate}
+
+\subsubsection{\underline{Problème}}
+
+\begin{enumerate}
+  \item Écrire une \verb|function| externe dénomée \verb|fact(N)| permettant de calculer le factoriel d'un nombre entier positif $N$ . On rappelle que 0! = 1 .
+  \item On veut calculer $e^x$ à l'aide d'un développemnt limité : 
+    $$ e^x = 1 + \frac{x}{1!} + \frac{x^2}{2!} + \cdots + \frac{x^i}{i!} = a_0 + a_1 + a_2 + \cdots a_i $$ . \\
+    On décide d'arrêter le développment lorsque le rapport du terme $a_i$ d'ordre $i$ sur la somme de tous les précédents est inférieur à une valeur donnée $\varepsilon $ . \\ 
+    
+    \vspace{0,125 cm}
+    \noindent
+    En se servant de la \verb|function| externe \verb|fact(N)| calculant les factoriels, écrire une \verb|function| externe \verb|exp(x)| approchant l'exponentiel d'une valeur réelle $x$ . \\
+    On remarquera que chaque terme de cette somme peut être obtenu à partir du précédent par :
+    $$ a_k = a_{k - 1} * \frac{x}{k} $$ ..
+\end{enumerate}
+\end{document}

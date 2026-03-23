@@ -1,0 +1,115 @@
+\documentclass[a4paper, 11pt]{report}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+
+\begin{document}
+
+\noindent
+UNIVERSITÉ DE LOMÉ \hfill ANNÉE UNIVERSITAIRE \\
+FACULTÉ DES SCIENCES \hfill 2021-2022
+
+\begin{center}
+  Examen de Phy 112 "Électromagnétisme et Relativité" \\ \vspace{0.2 cm}
+  \bf \underline{Partie B: Relativité restreinte} \\ \vspace{0.2 cm}
+  \it (Parcours Physique et chimie)
+\end{center}
+
+\subsubsection*{\underline{Questions de cours}}
+
+\begin{enumerate}
+  \item Énoncer le principe de relativité de Galilée.
+  \item Qu'entend on par référentiel de l'Ether ? \\
+  Quelle est la vitesse de la lumière dans ce référentiel ?
+  \item Quel était l'objectif de l'expérience de Michelson et Morley réalisée en 1887 ? \\
+  Quelle conclusion peut-on tirer de cette expérience ?
+  \item Quels sont les postulats fondamentaux de la Relativité Restreinte (On dit aussi postulat d'Einstein) ? La transformation de Galilée est-elle en accord avec les postulats d'Einstein ? Justifier votre réponse.
+  \item Quelle est la transformation d'espace-temps qui est en accord avec les postulats d'Einstein ?
+  \item Donner sans démontrer les relations de la transformation de Lorentz en termes de $ \beta = u/c $ et $ \gamma = \frac{1}{\sqrt{1-{u^2}/{c^2}}} $
+\end{enumerate}
+
+\subsubsection*{\underline{Exercices d'application}}
+
+\begin{enumerate}
+  \item[A1] Les coordonnées d'un éclair mesurés par $O$ sont $ x = 300 km $ , $ y = 150 km $ , $ z = 100 km $ , à $ t = 4.10^{-3}s $ . \quad {\bf Quelles sont les coordonnées spatio-temporelles} déterminées par un observateur $O'$ , se déplaçant par rapport à $O$ , avec une vitesse de 0,6c , le long de l'ace $x' - x$ commun ?
+  \item[A2] Un Observateur $O$  repère deux événements séparés dans l'espace et le temps de $ 20 km $ et $ 6.10^{-5} s $ . \quad {\bf Quelle doit être la vitesse} de déplacement par rapport à $O$ , d'un  observateur $O'$ pour que les deux événements lui paraissent simultanés ?
+  \item[A3] 
+  \begin{enumerate}
+    \item[(a)] Un éclair est observé par $O'$ frappe en $ x' = 60 m $ , $ y' = z' = 0$ , $ t' = 8.10^{-8} s $ . $O'$ se déplace sur l'axe $ x - x' $ (commun avec $O$) avec une vitesse de 0,5c par rapport à $O$ . \quad {\bf Quelles sont les coordonnées spatio-temporelles} de lévénement pour $O$ ?
+    \item[(b)] Si un second éclair frappe en $ x' = 10 m $ et $ t' = 2.10^{-7} s $ pour $O'$ , {\bf quel sera l'intervalle de temps entre les deux événements} pour $O$ ?
+  \end{enumerate} 
+\end{enumerate}
+
+\newpage
+
+\noindent
+{\bf UNIVERSITÉ DE LOMÉ \hfill ANNÉE UNIVERSITAIRE \\
+FACULTÉ DES SCIENCES \hfill 2020-2021 }
+
+\begin{center}
+  {\bf TD de INF203 Algorithmes et Programmation Fortran}
+\end{center}
+
+\subsubsection{\underline{Exercice 1}}
+
+\noindent
+L'énergie potentielle inermoléculaire peut être calculée par la formule de Renards-jones: 
+$$ E(R) = 4\varepsilon((\sigma/R)^2 - (\sigma/R)^6) $$
+où $\varepsilon$ et $\sigma$ sont les paramètres caractéristiques des molécules mises en jeu. \\
+
+\vspace{0,5 cm}
+
+\noindent
+Écrire un programme permettant de calculer $E(R)$ pour des valeurs de $R$ comprises entre 1 et 5 \AA \hspace{0,05 cm} par pas de 0,25, les valeurs des paramètres $\varepsilon$ et $\sigma$ sont donnés dans le tableau ci-contre 
+
+
+\begin{table}[h]
+  \begin{flushright}
+  \begin{tabular}{||l c r||}
+    \hline
+    \hline
+    Atomes & $\varepsilon(kcla/mole)$ & $\sigma($\AA$)$ \\
+    \hline
+    \hline
+    He & 0,12 & 2,6 \\
+    Ne & 0,07 & 2,8 \\
+    Ar & 0,24 & 3,4 \\ 
+    Kr & 0,35 & 3,8 \\
+    Xe & 0,45 & 4,0 \\
+    \hline
+    \hline
+  \end{tabular}
+  \end{flushright}
+\end{table}
+
+\noindent
+Enregistre dans des fichiers (un fichier par élément gaz rare) les données dans le but de reproduirele graphe de l'énergie potentielle en foction de la position $R$. \\
+Chaque fichier doit contenir deux colonnes correspondant aux valeurs succesives de $R$ et $E(R)$
+
+\subsubsection{\underline{Exercice 2}}
+
+\noindent
+L'énergie potentielle d'une particule est donnée par la relation $ E = \frac{1}{r^3} - \frac{1}{r^2} $ .
+
+\begin{enumerate}
+  \item[(a)] Écrire un programme avec une boucle \verb|DO| permettant de calculer $E$ pour des valeurs de $r$ entières comprise entre 1 et 10. Le résultat sera enregistré dans un fichier.
+  \item[(b)] Idem avec $r$ variant de 0,5 et 5 avec un pas de 0,5.
+  \item[(c)] Idem avec $r$ variant de 0,7 à $X$ avec un pas de 0,3. La valeur de $X$ devrait être donnée à l'exécution.
+\end{enumerate}
+
+\subsubsection{\underline{Problème}}
+
+\begin{enumerate}
+  \item Écrire une \verb|function| externe dénomée \verb|fact(N)| permettant de calculer le factoriel d'un nombre entier positif $N$ . On rappelle que 0! = 1 .
+  \item On veut calculer $e^x$ à l'aide d'un développemnt limité : 
+    $$ e^x = 1 + \frac{x}{1!} + \frac{x^2}{2!} + \cdots + \frac{x^i}{i!} = a_0 + a_1 + a_2 + \cdots a_i $$ . \\
+    On décide d'arrêter le développment lorsque le rapport du terme $a_i$ d'ordre $i$ sur la somme de tous les précédents est inférieur à une valeur donnée $\varepsilon $ . \\ 
+    
+    \vspace{0,125 cm}
+    \noindent
+    En se servant de la \verb|function| externe \verb|fact(N)| calculant les factoriels, écrire une \verb|function| externe \verb|exp(x)| approchant l'exponentiel d'une valeur réelle $x$ . \\
+    On remarquera que chaque terme de cette somme peut être obtenu à partir du précédent par :
+    $$ a_k = a_{k - 1} \times \frac{x}{k} $$ . 
+  \item   
+\end{enumerate}
+\end{document}

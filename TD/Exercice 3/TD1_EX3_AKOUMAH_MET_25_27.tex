@@ -1,0 +1,161 @@
+\documentclass[a4paper, 10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+\renewcommand{\thesection}{\Roman{section}}
+
+\title{ \bf Supersymmetric and Shape-Invariant Generalization for
+Non-resonant Jaynes-Cummings Systems}
+\author{A. N. F. Aleixo \footnote{Electronic address: aleixo@nucth.physics.wisc.edu} \\
+\it Department of Physics, University of Wisconsin \\
+\it Madison, Wisconsin 53706 USA  \footnote{Permanent address: Instituto de F´ısica, Universidade Federal do Rio de Janeiro, RJ - Brazil.}
+\and \\
+A. B. Balantekin \footnote{Electronic address: baha@nucth.physics.wisc.edu}\smallskip, \\
+\it Max-Planck-Institut für Kernphysik, Postfach 103980, D-69029 Heidelberg, Germany \footnote{Permanent address:Department of Physics, University of Wisconsin, Madison, Wisconsin 53706
+USA}
+\and \\ 
+M. A. Cândido Ribeiro \footnote{Electronic address: macr@df.ibilce.unesp.br} \smallskip, \\
+\it Departamento de F\'isica - Instituto de Biociências, Letras e Ciências Exatas \\
+UNESP, S\~ao José do Rio Preto, SP - Brazil}
+\date{(November 13, 2018)}
+
+\begin{document}
+
+\maketitle
+
+\begin{center}
+    \section*{Abstract}
+\end{center}
+
+A class of shape-invariant bound-state problems which represent transitions
+in a two-level system introduced earlier are generalized to include arbitrary
+energy splittings between the two levels. We show that the coupled-channel
+Hamiltonians obtained correspond to the generalization of the non-resonant
+Jaynes-Cummings Hamiltonian, widely used in quantized theories of laser.
+In this general context, we determine the eigenstates, eigenvalues, the time
+evolution matrix, and the population inversion matrix factor.\\
+
+\begin{flushright}
+    Typeset using \LaTeX
+\end{flushright}
+
+\newpage
+\begin{center}
+     \bf \section{INTRODUCTION}
+\end{center}
+
+The integrability condition called shape-invariance originates in supersymmetric quantum mechanics [1,2]. The separable positive-definite Hamiltonian $ \hat{H_1} = \hat{A}^{\dagger} \hat{A} $ is called shape-invariant if the condition 
+\begin{equation}
+     \hat{A}(a_1) \hat{A}^{\dagger}(a_1) = \hat{A}^{\dagger}(a_2) \hat{A}(a_2) + R(a_2) 
+\end{equation}
+is satisfied [3]. In this equation $a_1$ and $a_2$ represent parameters of the Hamiltionian. The parameter $a_2$ is a function of $a_1$ and the remainder $R(a_1)$ is independent of the dynamical variables such as position and momentum. Even though not all exactly-solvable problems are shape-invariant [4], shape invariance, especially in its algebraic formulation [5-7], has prove, to be a powerful technique to study exactly-solvable systems.\\
+\vspace{0,5cm}
+
+\begin{center}
+    {\bf\section{THE GENERALIZED NON-RESONANT JAYNES-CUMMINGS HAMILTONIAN}}
+\end{center}
+
+\subsection{The Resonant Limit}
+
+\subsection{The Standard Jaynes-Cummings Limit}
+\vspace{0,5 cm}
+
+\begin{center}
+    {\bf\section{THE TIME EVOLUTION OF THE SYSTEM}}
+\end{center}
+
+\noindent
+To study the time-dependent Schrödinger equation for a Jaynes-Cummings system in
+non-resonant situation
+\begin{equation}
+    i\hbar\frac{\partial}{\partial t}|\Psi(t)\rangle = (\hat{H_0} + \hat{H}_{int}) |\Psi(t)\rangle
+\end{equation}
+\noindent
+we can write the wavefunction as
+\begin{equation}
+    |\Psi(t)\rangle = exp(-i\hat{H_0}t/\hbar) |\Psi_i(t)\rangle ,
+\end{equation}
+
+\noindent
+and, by substituting this into Schrödinger equation and taking into account the commutation property between $\hat{H_0}$ et $\hat{H_{int}}$ , we obtain
+
+\begin{equation}
+    i\hbar\frac{\partial}{\partial t}|\Psi_i(t)\rangle = \hat{H}_{int}|\Psi_i(t)\rangle
+\end{equation}
+\noindent
+We introduce the evolution matrix $\hat{U}_i(t,0)$ :
+\begin{equation}
+    |\Psi_i(t)\rangle = \hat{U}_i(t,0)|\Psi_i(0)\rangle
+\end{equation}
+
+\noindent
+which satisfies the equation
+\begin{equation}
+    i\hbar\frac{\partial}{\partial t}\hat{U}_i(t,0) = \hat{H}_{int} \hat{U}_i(t,0) ,
+\end{equation}
+
+\noindent
+that is, in matrix form, written as
+\begin{equation}
+i\hbar \left [\begin{array}{cc}
+      \hat{U}'_{11}   & \hat{U}'_{12}  \\
+      \hat{U}'_{21}& \hat{U}'_{22}
+    \end{array} \right] = \alpha \left[\begin{array}{cc}
+     \beta    & \hat{T}\hat{B}_-  \\
+      \hat{B}_+\hat{T}^\dagger   & -\beta 
+    \end{array}\right] \left [\begin{array}{cc}
+      \hat{U}_{11}   & \hat{U}_{12}  \\
+    \hat{U}_{21} & \hat{U}_{22}
+    \end{array} \right]
+\end{equation} 
+
+\noindent
+where the primes denote the time derivative. One fast way to diagonalize the evolution
+matrix differential equation is by differentiating Eq. (3.5) with respect to time. We find
+
+\begin{equation}
+    i\hbar\frac{\partial^2}{\partial t^2}\hat{U}_i(t,0) = \hat{H}_{int}\frac{\partial}{\partial t}\hat{U}_i(t,0) = \frac{1}{i\hbar}\hat{H}_{int}^2(t,0)
+\end{equation}
+\noindent
+which can be written as
+\begin{equation}
+    \left [\begin{array}{cc}
+   \hat{U''}_{11}  & \hat{U''}_{12} \\
+    \hat{U''}_{21} & \hat{U''}_{22}
+\end{array} \right] = -\left[\begin{array}{cc}
+    \omega_1 & 0  \\
+    0 & \omega_2
+\end{array} \right] \left[\begin{array}{cc}
+   \hat{U}_{11}  &  \hat{U}_{12} \\
+    \hat{U}_{21} & \hat{U}_{22}
+\end{array} \right]
+\end{equation}
+
+\noindent
+where
+
+\begin{equation}
+    \hbar\hat{\omega}_1 = \alpha \sqrt{\hat{T}\hat{B}_-\hat{B}_+ +\beta^2} = \sqrt{\hbar\Omega \hat{H}_2 + (\hbar\Delta)^2} 
+\end{equation}
+
+\begin{equation}
+    \hbar\hat{\omega}_2 = \alpha \sqrt{\hat{B}_-\hat{B}_+ +\beta^2} = \sqrt{\hbar\Omega \hat{H}_1 + (\hbar\Delta)^2}
+\end{equation}
+
+\noindent
+Since by initial conditions $\hat{U}_i(0,0) = \hat{I}$, , then we can write the solution of the evolution matrix differential equation (3.7) as
+
+\begin{equation}
+    \hat{U}_i(t,0) = \left [\begin{array}{cc}
+      \cos(\omega_1 t)   & \sin(\omega_1 t)\hat{C} \\
+        \sin(\omega_2 t)\hat{D} & \cos(\omega_2 t)
+    \end{array} \right]
+\end{equation}
+
+\noindent
+and the $\hat{C}$ the $\hat{D}$ operators can be determined by the unitarity conditions
+
+\begin{equation}
+    \hat{U}_i^{\dagger}(t,0)\hat{U}_i(t,0) = \hat{U}_i(t,0)\hat{U}_i^ {\dagger}(t,0) = \hat{I} .
+\end{equation}
+\end{document}
