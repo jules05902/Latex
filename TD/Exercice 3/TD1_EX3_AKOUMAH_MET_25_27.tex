@@ -2,6 +2,12 @@
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage[french]{babel}
+\usepackage{graphicx}
+\usepackage[a4paper,margin=2.45cm]{geometry}
+\usepackage{amsmath}
+\numberwithin{equation}{section}
+
+
 \renewcommand{\thesection}{\Roman{section}}
 
 \title{ \bf Supersymmetric and Shape-Invariant Generalization for
@@ -22,6 +28,8 @@ UNESP, S\~ao José do Rio Preto, SP - Brazil}
 \begin{document}
 
 \maketitle
+\reversemarginpar
+\marginpar{\rotatebox{90}{\Large arxiv.org/abs/quant-ph/0005045v1}}
 
 \begin{center}
     \section*{Abstract}
@@ -44,20 +52,20 @@ evolution matrix, and the population inversion matrix factor.\\
      \bf \section{INTRODUCTION}
 \end{center}
 
-The integrability condition called shape-invariance originates in supersymmetric quantum mechanics [1,2]. The separable positive-definite Hamiltonian $ \hat{H_1} = \hat{A}^{\dagger} \hat{A} $ is called shape-invariant if the condition 
+The integrability condition called shape-invariance originates in supersymmetric quantum mechanics ~\cite{[1,2]}. The separable positive-definite Hamiltonian $ \hat{H_1} = \hat{A}^{\dagger} \hat{A} $ is called shape-invariant if the condition 
 \begin{equation}
      \hat{A}(a_1) \hat{A}^{\dagger}(a_1) = \hat{A}^{\dagger}(a_2) \hat{A}(a_2) + R(a_2) 
 \end{equation}
-is satisfied [3]. In this equation $a_1$ and $a_2$ represent parameters of the Hamiltionian. The parameter $a_2$ is a function of $a_1$ and the remainder $R(a_1)$ is independent of the dynamical variables such as position and momentum. Even though not all exactly-solvable problems are shape-invariant [4], shape invariance, especially in its algebraic formulation [5-7], has prove, to be a powerful technique to study exactly-solvable systems.\\
+is satisfied ~\cite{[3]}. In this equation $a_1$ and $a_2$ represent parameters of the Hamiltionian. The parameter $a_2$ is a function of $a_1$ and the remainder $R(a_1)$ is independent of the dynamical variables such as position and momentum. Even though not all exactly-solvable problems are shape-invariant ~\cite{[4]}, shape invariance, especially in its algebraic formulation ~\cite{[5-7]}, has prove, to be a powerful technique to study exactly-solvable systems.\\
 \vspace{0,5cm}
 
 \begin{center}
     {\bf\section{THE GENERALIZED NON-RESONANT JAYNES-CUMMINGS HAMILTONIAN}}
 \end{center}
 
-\subsection{The Resonant Limit}
+\subsection*{The Resonant Limit}
 
-\subsection{The Standard Jaynes-Cummings Limit}
+\subsection*{The Standard Jaynes-Cummings Limit}
 \vspace{0,5 cm}
 
 \begin{center}
@@ -68,30 +76,30 @@ is satisfied [3]. In this equation $a_1$ and $a_2$ represent parameters of the H
 To study the time-dependent Schrödinger equation for a Jaynes-Cummings system in
 non-resonant situation
 \begin{equation}
-    i\hbar\frac{\partial}{\partial t}|\Psi(t)\rangle = (\hat{H_0} + \hat{H}_{int}) |\Psi(t)\rangle
+    i\hbar\frac{\partial}{\partial t}|\Psi(t)\rangle = ({\bf \hat{H}}_o + {\bf \hat{H}}_{int}) |\Psi(t)\rangle
 \end{equation}
 \noindent
 we can write the wavefunction as
 \begin{equation}
-    |\Psi(t)\rangle = exp(-i\hat{H_0}t/\hbar) |\Psi_i(t)\rangle ,
+    |\Psi(t)\rangle = exp(-i{\bf \hat{H}}_ot/\hbar) |\Psi_i(t)\rangle ,
 \end{equation}
 
 \noindent
-and, by substituting this into Schrödinger equation and taking into account the commutation property between $\hat{H_0}$ et $\hat{H_{int}}$ , we obtain
+and, by substituting this into Schrödinger equation and taking into account the commutation property between ${\bf\hat{H}}_o$ et ${\bf \hat{H}}_{int}$ , we obtain
 
 \begin{equation}
-    i\hbar\frac{\partial}{\partial t}|\Psi_i(t)\rangle = \hat{H}_{int}|\Psi_i(t)\rangle
+    i\hbar\frac{\partial}{\partial t}|\Psi_i(t)\rangle = {\bf \hat{H}}_{int}|\Psi_i(t)\rangle
 \end{equation}
 \noindent
-We introduce the evolution matrix $\hat{U}_i(t,0)$ :
+We introduce the evolution matrix ${\bf \hat{U}}_i(t,0)$ :
 \begin{equation}
-    |\Psi_i(t)\rangle = \hat{U}_i(t,0)|\Psi_i(0)\rangle
+    |\Psi_i(t)\rangle = {\bf \hat{U}}_i(t,0)|\Psi_i(0)\rangle
 \end{equation}
 
 \noindent
 which satisfies the equation
 \begin{equation}
-    i\hbar\frac{\partial}{\partial t}\hat{U}_i(t,0) = \hat{H}_{int} \hat{U}_i(t,0) ,
+    i\hbar\frac{\partial}{\partial t} {\bf \hat{U}}_i(t,0) = {\bf \hat{H}}_{int} {\bf \hat{U}}_i(t,0) ,
 \end{equation}
 
 \noindent
@@ -114,7 +122,7 @@ where the primes denote the time derivative. One fast way to diagonalize the evo
 matrix differential equation is by differentiating Eq. (3.5) with respect to time. We find
 
 \begin{equation}
-    i\hbar\frac{\partial^2}{\partial t^2}\hat{U}_i(t,0) = \hat{H}_{int}\frac{\partial}{\partial t}\hat{U}_i(t,0) = \frac{1}{i\hbar}\hat{H}_{int}^2(t,0)
+    i\hbar\frac{\partial^2}{\partial t^2}{\bf \hat{U}}_i(t,0) = {\bf \hat{H}}_{int}\frac{\partial}{\partial t}{\bf\hat{U}}_i(t,0) = \frac{1}{i\hbar}{\bf \hat{H}}_{int}^2(t,0)
 \end{equation}
 \noindent
 which can be written as
@@ -143,10 +151,10 @@ where
 \end{equation}
 
 \noindent
-Since by initial conditions $\hat{U}_i(0,0) = \hat{I}$, , then we can write the solution of the evolution matrix differential equation (3.7) as
+Since by initial conditions ${\bf \hat{U}}_i(0,0) = \hat{I}$, , then we can write the solution of the evolution matrix differential equation (3.7) as
 
 \begin{equation}
-    \hat{U}_i(t,0) = \left [\begin{array}{cc}
+    {\bf \hat{U}}_i(t,0) = \left [\begin{array}{cc}
       \cos(\omega_1 t)   & \sin(\omega_1 t)\hat{C} \\
         \sin(\omega_2 t)\hat{D} & \cos(\omega_2 t)
     \end{array} \right]
@@ -156,6 +164,22 @@ Since by initial conditions $\hat{U}_i(0,0) = \hat{I}$, , then we can write the 
 and the $\hat{C}$ the $\hat{D}$ operators can be determined by the unitarity conditions
 
 \begin{equation}
-    \hat{U}_i^{\dagger}(t,0)\hat{U}_i(t,0) = \hat{U}_i(t,0)\hat{U}_i^ {\dagger}(t,0) = \hat{I} .
+    {\bf \hat{U}}_i^{\dagger}(t,0){\bf \hat{U}}_i(t,0) = {\bf \hat{U}}_i(t,0){\bf \hat{U}}_i^ {\dagger}(t,0) = {\bf \hat{I}} .
 \end{equation}
+
+\begin{thebibliography}{9}
+\bibitem{[1]} E. Witten, Nucl. Phys. B 185, 513 (1981).
+\bibitem{[2]} For a recent review see F. Cooper, A. Khare and U. Sukhatme, Phys. Rep. 251, 267
+(1995).
+\bibitem{[3]} L. Gendenshtein, Pis’ma Zh. Eksp. Teor. Fiz. 38, 299 (1983) [JETP Lett. 38, 356
+(1983)].
+\bibitem{[4]} F. Cooper, J. N. Ginocchio and A. Khare, Phys. Rev. D 36, 2458 (1987).
+\bibitem{[5]} A. B. Balantekin, Phys. Rev. A 57, 4188 (1998).
+\bibitem{[6]} S. Chaturvedi, R. Dutt, A. Gangopadhyaya, P. Panigrahi, C. Rasinariu, and U.
+Sukhatme, Phys. Lett. A 248, 109 (1998).
+\bibitem{[7]} A. N. F. Aleixo, A. B. Balantekin, and M. A. Cândido Ribeiro, J. Phys. A: Math. Gen.
+32, 2785 (1999).
+\bibitem{[8]} A. B. Balantekin, M. A. Cândido Ribeiro, and A. N. F. Aleixo, J. Phys. A: Math. Gen.
+33, 1503 (2000).
+\end{thebibliography}
 \end{document}
