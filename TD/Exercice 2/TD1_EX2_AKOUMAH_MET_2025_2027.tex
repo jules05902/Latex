@@ -2,6 +2,7 @@
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage[french]{babel}
+\usepackage[a4paper,margin=2.45cm]{geometry}
 
 \begin{document}
 \noindent
@@ -19,15 +20,14 @@ L'énergie potentielle inermoléculaire peut être calculée par la formule de R
 $$ E(R) = 4\varepsilon((\sigma/R)^2 - (\sigma/R)^6) $$
 où $\varepsilon$ et $\sigma$ sont les paramètres caractéristiques des molécules mises en jeu. \\
 
-\vspace{0,5 cm}
+\vspace{0,25cm}
+\noindent
+\begin{minipage}{0.6\textwidth}
 
 \noindent
 Écrire un programme permettant de calculer $E(R)$ pour des valeurs de $R$ comprises entre 1 et 5 \AA \hspace{0,05 cm} par pas de 0,25, les valeurs des paramètres $\varepsilon$ et $\sigma$ sont donnés dans le tableau ci-contre 
-
-
-
-\begin{table}[h]
-  \begin{flushright}
+\end{minipage}
+\begin{minipage}{0.4\textwidth}
   \begin{tabular}{||l c r||}
     \hline
     \hline
@@ -42,8 +42,7 @@ où $\varepsilon$ et $\sigma$ sont les paramètres caractéristiques des molécu
     \hline
     \hline
   \end{tabular}
-  \end{flushright}
-\end{table}
+\end{minipage}
 
 \noindent
 Enregistre dans des fichiers (un fichier par élément gaz rare) les données dans le but de reproduirele graphe de l'énergie potentielle en foction de la position $R$. \\
