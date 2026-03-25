@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.2.2)  25 MAR 2026 13:47
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.2.2)  25 MAR 2026 20:58
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -738,6 +738,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 330--331
  []
 
 
+Underfull \hbox (badness 1997) in paragraph at lines 333--333
+[]|[]\T1/Raleway-TLF/m/n/10 2026 / 02 -
+ []
+
+
 Overfull \hbox (7.5472pt too wide) in alignment at lines 333--333
 [][][] 
  []
@@ -748,108 +753,58 @@ Underfull \hbox (badness 10000) in alignment at lines 333--333
  []
 
 
-Overfull \hbox (7.5472pt too wide) in alignment at lines 338--338
+Underfull \hbox (badness 10000) in paragraph at lines 337--337
+[]|[]\T1/Raleway-TLF/m/n/10 2021 -
+ []
+
+
+Overfull \hbox (7.5472pt too wide) in alignment at lines 337--337
 [][][] 
  []
 
 
-Underfull \hbox (badness 10000) in alignment at lines 338--338
+Underfull \hbox (badness 10000) in alignment at lines 337--337
 [][] 
  []
 
 
-Overfull \hbox (7.5472pt too wide) in alignment at lines 344--344
+Overfull \hbox (7.5472pt too wide) in alignment at lines 345--345
 [][][] 
  []
 
 
-Underfull \hbox (badness 10000) in alignment at lines 344--344
-[][] 
- []
-
-
-Overfull \hbox (7.5472pt too wide) in alignment at lines 349--349
-[][][] 
- []
-
-
-Underfull \hbox (badness 10000) in alignment at lines 349--349
-[][] 
- []
-
-
-Overfull \hbox (7.5472pt too wide) in alignment at lines 355--355
-[][][] 
- []
-
-
-Underfull \hbox (badness 10000) in alignment at lines 355--355
-[][] 
- []
-
-
-Overfull \hbox (6.0pt too wide) in paragraph at lines 361--362
+Overfull \hbox (6.0pt too wide) in paragraph at lines 343--345
 [][][][][][][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 361--362
-
- []
-
-
-Overfull \hbox (7.5472pt too wide) in alignment at lines 363--363
-[][][] 
- []
-
-
-Underfull \hbox (badness 10000) in alignment at lines 363--363
+Underfull \hbox (badness 10000) in alignment at lines 345--345
 [][] 
  []
 
 
-Overfull \hbox (7.5472pt too wide) in alignment at lines 368--368
+Overfull \hbox (7.5472pt too wide) in alignment at lines 350--350
 [][][] 
  []
 
 
-Underfull \hbox (badness 10000) in alignment at lines 368--368
-[][] 
- []
-
-
-Overfull \hbox (7.5472pt too wide) in alignment at lines 373--373
-[][][] 
- []
-
-
-Underfull \hbox (badness 10000) in alignment at lines 373--373
-[][] 
- []
-
-
-Overfull \hbox (7.5472pt too wide) in alignment at lines 378--378
-[][][] 
- []
-
-
-Underfull \hbox (badness 10000) in alignment at lines 378--378
+Underfull \hbox (badness 10000) in alignment at lines 350--350
 [][] 
  []
 
 LaTeX Font Info:    Font shape `T1/Raleway-TLF/m/n' will be
-(Font)              scaled to size 9.0pt on input line 387.
+(Font)              scaled to size 9.0pt on input line 359.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <9> on input line 387.
+(Font)              <9> on input line 359.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 387.
+(Font)              <6> on input line 359.
 
-Overfull \hbox (134.03741pt too wide) in paragraph at lines 387--388
+Overfull \hbox (134.03741pt too wide) in paragraph at lines 359--360
 [] [][][][][][] 
  []
 
 LaTeX Font Info:    Font shape `T1/Raleway-TLF/b/n' will be
-(Font)              scaled to size 9.0pt on input line 401.
+(Font)              scaled to size 9.0pt on input line 373.
 
 Package fancyhdr Warning: \headheight is too small (-5.0pt): 
 (fancyhdr)                Make it at least 11.0pt, for example:
@@ -869,15 +824,15 @@ L3 programming layer <2024-01-22>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 16597 strings out of 474222
- 359015 string characters out of 5748734
- 1959975 words of memory out of 5000000
- 38521 multiletter control sequences out of 15000+600000
+ 16592 strings out of 474222
+ 358885 string characters out of 5748734
+ 1944975 words of memory out of 5000000
+ 38516 multiletter control sequences out of 15000+600000
  639985 words of font info for 54 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,11n,93p,496b,505s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/impallari/raleway/Raleway-Bold.pfb></usr/share/texlive/texmf-dist/fonts/type1/impallari/raleway/Raleway-Regular.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb>
-Output written on TD2_EX2_AKOUMAH_MET_25_27.pdf (1 page, 59085 bytes).
+Output written on TD2_EX2_AKOUMAH_MET_25_27.pdf (1 page, 56445 bytes).
 PDF statistics:
  31 PDF objects out of 1000 (max. 8388607)
  20 compressed objects within 1 object stream
