@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.2.2)  24 MAR 2026 13:19
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.2.2)  25 MAR 2026 13:57
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -280,7 +280,10 @@ LaTeX Warning: Citation `[1' on page 2 undefined on input line 55.
 LaTeX Warning: Citation `2]' on page 2 undefined on input line 55.
 
 
-LaTeX Warning: Citation `[5-7]' on page 2 undefined on input line 59.
+LaTeX Warning: Citation `[5' on page 2 undefined on input line 59.
+
+
+LaTeX Warning: Citation `7]' on page 2 undefined on input line 59.
 
 [2] [3] (./TD1_EX3_AKOUMAH_MET_25_27.aux)
  ***********
@@ -299,9 +302,9 @@ Here is how much of TeX's memory you used:
  27361 multiletter control sequences out of 15000+600000
  572686 words of font info for 67 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 61i,11n,69p,578b,428s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 61i,11n,69p,579b,428s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1728.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0600.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0700.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1200.pfb>
-Output written on TD1_EX3_AKOUMAH_MET_25_27.pdf (3 pages, 288767 bytes).
+Output written on TD1_EX3_AKOUMAH_MET_25_27.pdf (3 pages, 288787 bytes).
 PDF statistics:
  117 PDF objects out of 1000 (max. 8388607)
  71 compressed objects within 1 object stream
