@@ -1,0 +1,68 @@
+\documentclass[a4paper, 12pt]{report}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+\usepackage{appendix}
+\usepackage{graphicx}
+\usepackage[a4paper, margin = 2.5 cm]{geometry}
+\usepackage{amsmath}
+
+\begin{document}
+
+\begin{center}
+  \Huge {\bf UBL} \\
+    \vspace{0.5 cm}
+
+  \large Université Libre de Bruxelles\\
+  \large Faculté des Sciences Appliquées \\
+  \vspace{0.5 cm}
+  Année académique 2002-2003\\
+    \vspace{7.5 cm}
+  \Large Technique de résolution numérique de l'équation de Schrödinger dépendant du temps\\
+  \end{center}
+  
+  \vspace{10 cm}
+
+  \begin{minipage}{0,5 \textwidth}
+    \begin{flushleft}
+    Directeur de mémoire : \\
+    Daniel Baye
+  \end{flushleft}
+  \end{minipage} \hfill \begin{minipage}{0.5 \textwidth}
+    \begin{flushright}
+      Travail de fin d'étude \\
+      présenté par Gérard Goldstein\\
+      en vue de l'obtention du grade\\
+      d'Ingénieur Civil Physicien
+    \end{flushright}
+  \end{minipage}
+
+  \newpage
+  
+  \vspace*{\fill}
+  \begin{flushright}
+    \it Je tiens à remercier Daniel Baye et Pierre Capel de m'avoir si bien encadré tout au long de la réalisation de ce travail. Leur grande disponibilité et leur esprit de rigueur ont sans conteste constitué pour moi un formidable atout. Un grand merci également à mes parents et à mon frère pour leur soutien, ainsi qu'à Emma et Julien pour leur solidarité.
+  \end{flushright}
+  \vspace*{\fill}
+
+  \newpage
+
+  \tableofcontents
+
+  \newpage
+
+  \chapter*{Introduction}
+  \addcontentsline{toc}{chapter}{Introduction}
+  L'équation de Schrödingerest l'équation fondamentale de la mécanique quantique. Il s'agit d'une équation aux dérivées partielles qui décrit l'évolution au cours du temps de la fonction d'onde $\Psi$ d'un système physique. Elle prend la forme suivante
+  $$i\hbar\frac{\partial \Psi}{\partial t} = H\Psi$$
+  où H est l'opéarteur hamiltonien(associé à l'énergie totale) du système considéré. Celui-ci
+  est la somme des opérateurs d'énergie cinétique et potentielle : 
+  $$H(t) = T + V(t)$$
+  L’opérateur hamiltonien dépend donc du temps si les potentiels qui entrent en jeu
+dépendent eux-mêmes explicitement du temps. Lorsque l’opérateur $H$ ne dépend
+pas du temps, on est ramené par séparation des variables spatiales et temporelle
+à une équation aux valeurs propres, appelée équation de Schrödinger stationnaire ~\cite{[1]}.Par contre si l’hamiltonien est fonction du temps, on est obligé de résoudre
+l'équation de Schrödinger dépendant du temps. C’est le cas par exemple lorsqu’on
+traite certains problèmes de manière semi-classique ~\cite{[2], [3]} ou quand on étudie l’effet
+sur un atome ou une molécule d’un champ électrique extérieur variable ~\cite{[4]}.
+\end{document}
