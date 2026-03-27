@@ -79,8 +79,70 @@ d’une équation, appelée équation d’évolution.
 \section{L’équation de Schrödinger}
 
 La mécanique quantique postule qu’à un instant $t_0$ fixé, l’état d’un système physique
-est défini par la donné d’un ket (vecteur d’état) $|\psi(t_0)\rangle $ appartenant à l’espace des états  $\varepsilon$.\\
+est défini par la donné d’un ket (vecteur d’état) $|\psi(t_0)\rangle $ appartenant à l’espace des états $\displaystyle \varepsilon$.\\
 En outre l’évolution dans le temps du vecteur d’état $|\psi(t)\rangle $ est régie par l’équation
 de Schrödinger
-$$i\hbar\frac{}{}
+
+ \begin{equation}
+  i\hbar\frac{d}{dt}|\psi(t)\rangle = H(t)|\psi(t)\rangle
+  \label{eq:schrodinger}
+ \end{equation}
+où $H(t)$ est l’observable associée à l’énergie totale du système (l’opérateur hamiltonien
+du système). Celle-ci peut dépendre explicitement du temps. \\
+
+\noindent
+L’équation de Schrödinger est une équation différentielle du premier ordre par
+rapport au temps. Ce qui signifie que la donnée d’un état initial $|\psi(t_0)\rangle$ suffit à déterminer $|\psi(t)\rangle$ à tout instant ultérieur $t$. Ceci n’est valable que si l’évolution n’est
+pas interrompue par une mesure d’une grandeur physique du système. \\
+Cette équation est également linéaire et homogène. Ses solutions sont donc linéairement
+superposables. Si $|\psi_1(t)\rangle$ et $|\psi_2(t)\rangle$ sont deux solutions de l’équation \eqref{eq:schrodinger} et si l’état
+initial du système est défini par $|\psi(t_0)\rangle = \lambda_1|\psi_1(t_0)\rangle + \lambda_2|\psi_2(t_0)\rangle $, alors l’état du
+système au temps $t$ est donné par $|\psi(t)\rangle = \lambda_1|\psi_1(t)\rangle + \lambda_2|\psi_2(t)\rangle $ . Il existe donc une
+correspondance linéaire entre $|\psi(t_0)\rangle$ et $|\psi{t}\rangle $.
+
+\section{Propriétés de l’opérateur d’évolution}
+
+Du fait de la correspondance linéaire entre $|\psi(t_0)\rangle$ et $|\psi{t}\rangle $ , il existe un opérateur
+linéaire $U(t,t_0)$ tel que 
+
+\begin{equation}
+  \psi(t)\rangle = U(t,t_0)|\psi(t_0)\rangle
+  \label{eq:operateur}
+\end{equation}
+
+En substituant dans l’équation de Schrödinger \eqref{eq:schrodinger} et \eqref{eq:operateur}, on obtient
+
+$$i\hbar\frac{\partial}{\partial t}U(t,t_0)|\psi(t_0)\rangle = H(t)U(t,t_0)|\psi(t_0)\rangle $$
+
+$\psi(t)\rangle$ pouvant être quelconque, on en déduit l’équation d’évolution
+
+\begin{equation}
+  i\hbar\frac{\partial}{\partial t}U(t,t_0) = H(t)U(t,t_0)
+  \label{eq:évolution}
+\end{equation}
+
+En évaluant l’expression \eqref{eq:operateur} au temps $t = t_0 $ , il advient
+$$|\psi(t)\rangle = U(t,t_0)|\psi(t_0)\rangle $$ 
+et toujours en considérant que $|\psi(t_0)\rangle$ est quelconque , on obtient le résultat suivant 
+label
+\begin{equation}
+  U(t_0,t_0) = 1
+  \label{eq: identité}
+\end{equation}
+En remplaçant le couple $(t,t_0 )$ dans la définition \eqref{eq:operateur} successivement par les couples $(t,t')$ et $(t' , t'')$ on a 
+$$|\psi(t)\rangle = U(t,t')|\psi(t') \quad \mbox{ et } \quad |\psi(t')\rangle = U(t',t'')|\psi(t'')\rangle $$
+donc
+$$|\psi(t)\rangle = U(t,t')U(t',t'')|\psi(t'')\rangle $$
+Mais d'autre part $|\psi(t)\rangle = U(t,t'')|\psi(t'')\rangle $. En comparant ces deux dernières expressions,
+on trouve ($|\psi(t'')\rangle $ étant quelconque)
+$$ U(t,t'') = U(t,t')U(t',t'') $$
+En généralisant :
+
+\begin{equation}
+  U(t_n,t_1) = U(t_n, t_{n-1}) \cdots U(t_3, t_2)U(t_2, t_1)
+  \label{vecteurdetat}
+\end{equation}
+On peut également montrer en utilisant la propriété de conservation de la norme 
+du vecteur d'état au cours du temps que l'op"rateur d'évolution $U(t,t_0) $ est unitaire. \\
+Dans d'autres propriétés de l'équation de Schrödinger et de l'opérateur d'évolution peuvent être trouvées dans ~\cite{[1]} et ~\cite{[11]} 
 \end{document}

@@ -1,7 +1,7 @@
 # Fdb version 4
-["pdflatex"] 1774619762.95443 "/home/lordkaine/Documents/Latex/TD/TD2/Exercice 1/TD2_EX1_AKOUMAH_MET_25_27.tex" "TD2_EX1_AKOUMAH_MET_25_27.pdf" "TD2_EX1_AKOUMAH_MET_25_27" 1774619765.39136 2
+["pdflatex"] 1774653957.47487 "/home/lordkaine/Documents/Latex/TD/TD2/Exercice 1/TD2_EX1_AKOUMAH_MET_25_27.tex" "TD2_EX1_AKOUMAH_MET_25_27.pdf" "TD2_EX1_AKOUMAH_MET_25_27" 1774653960.68288 0
   "/etc/texmf/web2c/texmf.cnf" 1769770155.97171 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/lordkaine/Documents/Latex/TD/TD2/Exercice 1/TD2_EX1_AKOUMAH_MET_25_27.tex" 1774619760.64901 4035 becedbf8eb46ac4e112b197c10adaf29 ""
+  "/home/lordkaine/Documents/Latex/TD/TD2/Exercice 1/TD2_EX1_AKOUMAH_MET_25_27.tex" 1774653957.3535 7273 7eeeae0447a0cc8585a109638056462a ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecbx1200.tfm" 1136768653 3584 402da0b29eafbad07963b1224b222f18 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecbx1728.tfm" 1136768653 3584 ad49a18d8515beef6d92d4d3f197d0fd ""
@@ -24,9 +24,11 @@
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm" 1136768653 1116 933a60c408fc0a863a92debe84b2d294 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmsy8.tfm" 1136768653 1120 8b7d695260f3cff42e636090a8002094 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb" 1248133631 36741 fa121aac0049305630cf160b86157ee4 ""
+  "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb" 1248133631 35469 70d41d2b9ea31d5d813066df7c99281c ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb" 1248133631 32722 d7379af29a190c3f453aba36302ff5a9 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb" 1248133631 32726 0a1aea6fcd6468ee2cf64d891f5c43c8 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1248133631 32569 5e5ddc8df908dea60932f3c484a54c0d ""
+  "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb" 1248133631 32626 4f5c1b83753b1dd3a97d1b399a005b4b ""
   "/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii" 1461363279 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "/usr/share/texlive/texmf-dist/tex/generic/babel-french/french.ldf" 1703367853 67406 dceb79d013836a96b38471bc632b9fc3 ""
   "/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty" 1704662920 150008 7a05b0fdc0167c04e192003e780ab195 ""
@@ -75,9 +77,9 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1707919699 40399 f2c302f7d2af602abb742093540a5834 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1770044358.42861 5472669 54eaf61a88b6b7896ebd0dac973cb29c ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1770044756 8213270 9d0cff8356050cfaf2d5e6a2e79bd0ce ""
-  "TD2_EX1_AKOUMAH_MET_25_27.aux" 1774619764.266 678 062ab7aeffc1bc7957373e271461e309 "pdflatex"
-  "TD2_EX1_AKOUMAH_MET_25_27.tex" 1774619760.64901 4035 becedbf8eb46ac4e112b197c10adaf29 ""
-  "TD2_EX1_AKOUMAH_MET_25_27.toc" 1774619764.503 227 deb3051560c21f0f1def55f6ba512951 "pdflatex"
+  "TD2_EX1_AKOUMAH_MET_25_27.aux" 1774653960.19149 1048 93a9646cb086778c5c846a4b0ec238ce "pdflatex"
+  "TD2_EX1_AKOUMAH_MET_25_27.tex" 1774653957.3535 7273 7eeeae0447a0cc8585a109638056462a ""
+  "TD2_EX1_AKOUMAH_MET_25_27.toc" 1774653960.19649 321 ef10cbc53971562f057036f034e0644d "pdflatex"
   (generated)
   "TD2_EX1_AKOUMAH_MET_25_27.aux"
   "TD2_EX1_AKOUMAH_MET_25_27.log"
