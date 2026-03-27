@@ -50,11 +50,11 @@
   \tableofcontents
 
   \newpage
-
+  \setcounter{page}{5}
   \chapter*{Introduction}
   \addcontentsline{toc}{chapter}{Introduction}
   L'équation de Schrödingerest l'équation fondamentale de la mécanique quantique. Il s'agit d'une équation aux dérivées partielles qui décrit l'évolution au cours du temps de la fonction d'onde $\Psi$ d'un système physique. Elle prend la forme suivante
-  $$i\hbar\frac{\partial \Psi}{\partial t} = H\Psi$$
+  $$i\hbar\frac{\partial \Psi}{\partial t} = H\psi$$
   où H est l'opéarteur hamiltonien(associé à l'énergie totale) du système considéré. Celui-ci
   est la somme des opérateurs d'énergie cinétique et potentielle : 
   $$H(t) = T + V(t)$$
@@ -64,5 +64,23 @@ pas du temps, on est ramené par séparation des variables spatiales et temporel
 à une équation aux valeurs propres, appelée équation de Schrödinger stationnaire ~\cite{[1]}.Par contre si l’hamiltonien est fonction du temps, on est obligé de résoudre
 l'équation de Schrödinger dépendant du temps. C’est le cas par exemple lorsqu’on
 traite certains problèmes de manière semi-classique ~\cite{[2], [3]} ou quand on étudie l’effet
-sur un atome ou une molécule d’un champ électrique extérieur variable ~\cite{[4]}.
+sur un atome ou une molécule d’un champ électrique extérieur variable ~\cite{[4]}. Il est
+également parfois intéressant de résoudre l’équation de Schrödinger dépendant du
+temps même si les potentiels ne dépendent pas du temps. On peut citer entre autres les
+problèmes de calcul de coefficients de transmission au travers de barrières de potentiel ~\cite{[5]}. \\
+
+On peut montrer, d’après les propriétés de l’équation de Schrödinger, qu’il existe un
+opérateur, appelé opérateur d’évolution qui, appliqué à l’état d’un système à un instant
+donné, fournit l’état du système à un instant ultérieur ~\cite{[1]}. La résolution de l’équation de
+Schrödinger est alors ramenée à la recherche de cet opérateur qui est lui-même solution
+d’une équation, appelée équation d’évolution.
+
+\chapter{L’opérateur d’évolution}
+\section{L’équation de Schrödinger}
+
+La mécanique quantique postule qu’à un instant $t_0$ fixé, l’état d’un système physique
+est défini par la donné d’un ket (vecteur d’état) $|\psi(t_0)\rangle $ appartenant à l’espace des états  $\varepsilon$.\\
+En outre l’évolution dans le temps du vecteur d’état $|\psi(t)\rangle $ est régie par l’équation
+de Schrödinger
+$$i\hbar\frac{}{}
 \end{document}
