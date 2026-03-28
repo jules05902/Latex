@@ -1,9 +1,9 @@
-PWD /home/lordkaine/Documents/TD
+PWD /home/lordkaine/Documents/Latex/TD
 INPUT /etc/texmf/web2c/texmf.cnf
 INPUT /usr/share/texmf/web2c/texmf.cnf
 INPUT /usr/share/texlive/texmf-dist/web2c/texmf.cnf
 INPUT /var/lib/texmf/web2c/pdftex/pdflatex.fmt
-INPUT /home/lordkaine/Documents/TD/TD1_EX1_AKOUMAH_MET_25_27.tex
+INPUT /home/lordkaine/Documents/Latex/TD/TD1_EX1_AKOUMAH_MET_25_27.tex
 OUTPUT TD1_EX1_AKOUMAH_MET_25_27.log
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/report.cls
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/report.cls

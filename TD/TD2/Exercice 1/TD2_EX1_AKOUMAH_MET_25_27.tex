@@ -73,10 +73,21 @@ On peut montrer, d’après les propriétés de l’équation de Schrödinger, q
 opérateur, appelé opérateur d’évolution qui, appliqué à l’état d’un système à un instant
 donné, fournit l’état du système à un instant ultérieur ~\cite{[1]}. La résolution de l’équation de
 Schrödinger est alors ramenée à la recherche de cet opérateur qui est lui-même solution
-d’une équation, appelée équation d’évolution.
+d’une équation, appelée équation d’évolution. \\
+
+Hormis quelques cas extrêmement rares ~\cite{[6]} , il n’est en général pas possible de
+résoudre analytiquement l’équation de Schrödinger dépendant du temps. On est
+obligé de faire appel à des méthodes numériques. Une approximation fort intéressante
+consiste à construire une factorisation unitaire de l’opérateur d’évolution afin de
+l’appliquer de manière itérative à l’état initial du système. Cette méthode a l’avan-
+tage d’entraîner la conservation de la norme de la fonction d’onde. Celle-ci génère
+à chaque itération une erreur proportionnelle à une certaine puissance du pas de
+temps utilisé. Traditionnellement ~\cite{[2], [3]} , on utilise une approximation de l’opérateur
+d’évolution du deuxième ordre, c’est-à-dire une approximation générant à chaque itération une erreur proportionnelle au cube du pas de temps. Ceci implique que l’on
+doit prendre de petits pas de temps et par conséquent effectuer de nombreuses itérations.
 
 \chapter{L’opérateur d’évolution}
-\section{L’équation de Schrödinger}
+\section{L’équation de Schrödinger}Hormis quelques cas extrêmement rares
 
 La mécanique quantique postule qu’à un instant $t_0$ fixé, l’état d’un système physique
 est défini par la donné d’un ket (vecteur d’état) $|\psi(t_0)\rangle $ appartenant à l’espace des états $\displaystyle \varepsilon$.\\
@@ -144,5 +155,79 @@ En généralisant :
 \end{equation}
 On peut également montrer en utilisant la propriété de conservation de la norme 
 du vecteur d'état au cours du temps que l'op"rateur d'évolution $U(t,t_0) $ est unitaire. \\
-Dans d'autres propriétés de l'équation de Schrödinger et de l'opérateur d'évolution peuvent être trouvées dans ~\cite{[1]} et ~\cite{[11]} 
+Dans d'autres propriétés de l'équation de Schrödinger et de l'opérateur d'évolution peuvent être trouvées dans ~\cite{[1]} et ~\cite{[11]} .
+
+\section{Solution formelle de l’équation d’évolution}
+
+\chapter{Approximations de l’opérateur
+d’évolution}
+\section{Ordre de grandeur des différents termes du
+développement de Magnus}
+\section{Méthodes d’intégration numérique}
+\subsection{Méthode des rectangles centrés}
+\subsection{Méthode de Simpson}
+\section{Approximation du second ordre}
+\section{Approximation du quatrième ordre}
+\chapter{Discrétisation spatiale}
+\section{Les différences finies}
+\section{Les réseaux de Lagrange}
+\subsection{}Construction d’un réseau de Lagrange à partir de fonc-
+tions orthonormées
+\subsection{Réseaux basés sur des polynômes orthogonaux}
+\subsection{Le réseau de Hermite}
+\section{Le réseau sinc}
+\section{Facteur d’échelle}
+\section{Calcul de l’exponentielle d’une matrice}
+\subsection{Décomposition matricielle}
+\subsection{Approximation de Padé}
+\chapter{Exemples de résolution analytique
+de l’équation de Schrödinger
+dépendant du temps}
+\section{Etalement d’un paquet d’ondes gaussien}
+\section{L’oscillateur harmonique forcé}
+\subsection{Cas classique}
+\subsection{L’oscillateur harmonique non forcé}
+\subsection{L’oscillateur harmonique forcé}
+\subsection{L’échelon unité}
+\subsection{L’impulsion sinusoïdale}
+\subsection{A trois dimensions}
+\chapter{Résultats}
+\section{Calcul de l’erreur}
+\section{Etalement d’un paquet d’onde gaussien}
+\section{L’oscillateur harmonique forcé}
+\subsection{Conditions de calcul}
+\subsection{Comparaison des différentes techniques de discrétisation
+spatiale}
+\subsection{Vérification et comparaison des ordres des approxima-
+tions de l’opérateur d’évolution}
+\section{Discussion des résultats}
+\chapter*{Conclusion}
+\addcontentsline{toc}{chapter}{Conclusion}
+\chapter*{Annexes}
+\addcontentsline{toc}{chapter}{Annexes}
+\appendix
+\chapter{Propriétés sur les exponentielles d’opérateurs}
+\section{Dérivée de l’exponentielle d’un opérateur}
+\section{La formule de Baker-Campbell-Hausdorff (BCH)}
+\chapter{Les polynômes de Hermite}
+\chapter{Eléments de matrice du réseau de Hermite}
+\section{Eléments de matrice $\tilde{T}_{ij}$ approchés}
+\section{Eléments de matrice $T_{ij} $ exacts}
+\section{}Comparaison entre l’utilisation de $\tilde{T}_{ij}$ et $T_{ij} $
+\chapter{Calculs complémentaires pour le réseau sinc}
+\section{Orthonormalité des fonctions de base}
+\section{Elements de matrice $T_{ij}$}
+\chapter{Intégrale du lagrangien $\delta(t) $ pour l’impulsion si-
+nusoïdale}
+
+\begin{thebibliography}{9}
+\bibitem{[1]} C. Cohen-Tannoudji, B. Diu, F. Laloë, Mécanique quantique, Hermann, Paris, 1973
+\bibitem{[2]} N. Yamanaka, Y. Kino, Phys. Rev. A, 64, 042715 (2001)
+\bibitem{[3]} V.S. Melezhik, D. Baye, Phys. Rev. C, 59, 3232 (1999)
+\bibitem{[4]} D. Dundas, Phys. Rev. A, 65, 023408 (2002)
+\bibitem{[5]} S.A. Chin, C.R. Chen, J. Chem. Phys., 114, 7338 (2001)
+\bibitem{[6]} E. Kerner, Can. J. Phys., 36, 371 (1958)
+\bibitem{[11]} D. Baye, Mécanique quantique. Première partie : notions de base, Presses Universi-
+taires de Bruxelles, 2000
+\end{thebibliography}
 \end{document}
