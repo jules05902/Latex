@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.2.2)  26 MAR 2026 15:44
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.2.2)  31 MAR 2026 13:52
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -696,11 +696,6 @@ Overfull \hbox (134.03741pt too wide) in paragraph at lines 277--278
 [] [][][][][][] 
  []
 
-<cropped.jpg, id=4, 602.25pt x 602.25pt>
-File: cropped.jpg Graphic file (type jpg)
-<use cropped.jpg>
-Package pdftex.def Info: cropped.jpg  used on input line 286.
-(pdftex.def)             Requested size: 102.42836pt x -147.95242pt.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 304.
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -730,46 +725,46 @@ Underfull \hbox (badness 10000) in paragraph at lines 304--308
 
  []
 
+<cropped.jpg, id=4, 422.57875pt x 686.565pt>
+File: cropped.jpg Graphic file (type jpg)
+<use cropped.jpg>
+Package pdftex.def Info: cropped.jpg  used on input line 311.
+(pdftex.def)             Requested size: 85.35893pt x 113.80214pt.
+
+Overfull \hbox (1.69998pt too wide) in paragraph at lines 303--314
+[]$[]$ $[]$ 
+ []
+
 LaTeX Font Info:    Font shape `T1/Raleway-TLF/b/n' will be
-(Font)              scaled to size 10.0pt on input line 329.
+(Font)              scaled to size 10.0pt on input line 335.
 
-Overfull \hbox (6.0pt too wide) in paragraph at lines 329--331
+Overfull \hbox (6.0pt too wide) in paragraph at lines 335--337
 [][][][][][][] 
  []
 
 
-Overfull \hbox (7.5472pt too wide) in alignment at lines 333--333
+Overfull \hbox (7.5472pt too wide) in alignment at lines 339--339
 [][][] 
  []
 
 
-Underfull \hbox (badness 10000) in alignment at lines 333--333
+Underfull \hbox (badness 10000) in alignment at lines 339--339
 [][] 
  []
 
 
-Overfull \hbox (7.5472pt too wide) in alignment at lines 338--338
+Overfull \hbox (7.5472pt too wide) in alignment at lines 344--344
 [][][] 
  []
 
 
-Underfull \hbox (badness 10000) in alignment at lines 338--338
+Underfull \hbox (badness 10000) in alignment at lines 344--344
 [][] 
  []
 
 
-Overfull \hbox (6.0pt too wide) in paragraph at lines 346--348
+Overfull \hbox (6.0pt too wide) in paragraph at lines 352--354
 [][][][][][][] 
- []
-
-
-Overfull \hbox (7.5472pt too wide) in alignment at lines 350--350
-[][][] 
- []
-
-
-Underfull \hbox (badness 10000) in alignment at lines 350--350
-[][] 
  []
 
 
@@ -782,83 +777,60 @@ Underfull \hbox (badness 10000) in alignment at lines 356--356
 [][] 
  []
 
-LaTeX Font Info:    Font shape `T1/Raleway-TLF/m/n' will be
-(Font)              scaled to size 9.0pt on input line 365.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <9> on input line 365.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 365.
 
-Overfull \hbox (134.03741pt too wide) in paragraph at lines 365--366
-[] [][][][][][] 
+Overfull \hbox (7.5472pt too wide) in alignment at lines 362--362
+[][][] 
  []
 
 
-/home/lordkaine/Documents/Latex/TD/TD2/TD2_EX2_AKOUMAH_MET_25_27.tex:379: LaTeX Error: \begin{figure} on input line 284 ended by \end{document}.
+Underfull \hbox (badness 10000) in alignment at lines 362--362
+[][] 
+ []
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.379 \end{document}
-                    
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
+LaTeX Font Info:    Font shape `T1/Raleway-TLF/m/n' will be
+(Font)              scaled to size 9.0pt on input line 371.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <9> on input line 371.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 371.
 
-(./TD2_EX2_AKOUMAH_MET_25_27.aux)
+Overfull \hbox (134.03741pt too wide) in paragraph at lines 371--372
+[] [][][][][][] 
+ []
+
+LaTeX Font Info:    Font shape `T1/Raleway-TLF/b/n' will be
+(Font)              scaled to size 9.0pt on input line 385.
+
+Package fancyhdr Warning: \headheight is too small (-5.0pt): 
+(fancyhdr)                Make it at least 11.0pt, for example:
+(fancyhdr)                \setlength{\headheight}{11.0pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-16.0pt}.
+
+
+Overfull \vbox (5.0pt too high) has occurred while \output is active []
+
+ [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/raleway/a_bzmckq.enc}
+
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/raleway/a_yqxcf3.enc} <./cropped.jpg>] (./TD2_EX2_AKOUMAH_MET_25_27.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
  ***********
-
-/home/lordkaine/Documents/Latex/TD/TD2/TD2_EX2_AKOUMAH_MET_25_27.tex:379: You can't use `\end' in internal vertical mode.
-\enddocument ...cument/end}\deadcycles \z@ \@@end 
-                                                  
-l.379 \end{document}
-                    
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-
-/home/lordkaine/Documents/Latex/TD/TD2/TD2_EX2_AKOUMAH_MET_25_27.tex:379: LaTeX Error: \begin{figure} on input line 284 ended by \end{document}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.379 \end{document}
-                    
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-/home/lordkaine/Documents/Latex/TD/TD2/TD2_EX2_AKOUMAH_MET_25_27.tex:379: Missing } inserted.
-<inserted text> 
-                }
-l.379 \end{document}
-                    
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-)
-! Emergency stop.
-<*> .../Latex/TD/TD2/TD2_EX2_AKOUMAH_MET_25_27.tex
-                                                  
-*** (job aborted, no legal \end found)
-
- 
+ ) 
 Here is how much of TeX's memory you used:
- 16592 strings out of 474222
- 358884 string characters out of 5748734
- 1934975 words of memory out of 5000000
- 38524 multiletter control sequences out of 15000+600000
- 624643 words of font info for 48 fonts, out of 8000000 for 9000
+ 16604 strings out of 474222
+ 359136 string characters out of 5748734
+ 1944975 words of memory out of 5000000
+ 38528 multiletter control sequences out of 15000+600000
+ 639985 words of font info for 54 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,11n,93p,496b,608s stack positions out of 10000i,1000n,20000p,200000b,200000s
-!  ==> Fatal error occurred, no output PDF file produced!
+ 84i,11n,93p,496b,556s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texlive/texmf-dist/fonts/type1/impallari/raleway/Raleway-Bold.pfb></usr/share/texlive/texmf-dist/fonts/type1/impallari/raleway/Raleway-Regular.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb>
+Output written on TD2_EX2_AKOUMAH_MET_25_27.pdf (1 page, 78932 bytes).
+PDF statistics:
+ 34 PDF objects out of 1000 (max. 8388607)
+ 21 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 18 words of extra memory for PDF output out of 10000 (max. 10000000)
+
