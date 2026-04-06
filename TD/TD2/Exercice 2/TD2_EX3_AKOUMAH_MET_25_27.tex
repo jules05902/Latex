@@ -1,101 +1,139 @@
-\documentclass[a4paper,skipsamekey,11pt,english]{curve}
+\documentclass[a4paper]{article}
+    \usepackage{fullpage}
+    \usepackage{amsmath}
+    \usepackage{amssymb}
+    \usepackage{textcomp}
+    \usepackage[utf8]{inputenc}
+    \usepackage[T1]{fontenc}
+    \textheight=10in
+    \pagestyle{empty}
+    \raggedright
+    \usepackage[left=0.8in,right=0.8in,bottom=0.8in,top=0.8in]{geometry}
 
-% Uncomment to enable Chinese; needs XeLaTeX
-% \usepackage{ctex}
+    %\renewcommand{\encodingdefault}{cg}
+%\renewcommand{\rmdefault}{lgrcmr}
 
+\def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
 
-% Default biblatex style used for the publication list is APA6. If you wish to use a different style or pass other options to biblatex you can change them here. 
-\PassOptionsToPackage{style=ieee,sorting=ydnt,uniquename=init,defernumbers=true}{biblatex}
+% DEFINITIONS FOR RESUME %%%%%%%%%%%%%%%%%%%%%%%
 
-% Most commands and style definitions are in settings.sty.
-\usepackage{settings}
-% If you need to further customise your biblatex setup e.g. with \DeclareFieldFormat etc please add them here AFTER loading settings.sty. For example, to remove the default "[Online] Available:" prefix before URLs when using the IEEE style:
-\DefineBibliographyStrings{english}{url={\textsc{url}}}
-
-%% Only needed if you want a Publication List
-\addbibresource{own-bib.bib}
-
-%% Specify your last name(s) and first name(s) (as given in the .bib) to automatically bold your own name in the publications list. 
-%% One caveat: You need to write \bibnamedelima where there's a space in your name for this to work properly; or write \bibnamedelimi if you use initials in the .bib
-% \mynames{Lim/Lian\bibnamedelima Tze}
-
-%% You can specify multiple names like this, especially if you have changed your name or if you need to highlight multiple authors. See items 6–9 in the example "Journal Articles" output.
-\mynames{Lim/Lian\bibnamedelima Tze,
-  Wong/Lian\bibnamedelima Tze,
-  Lim/Tracy,
-  Lim/L.\bibnamedelimi T.}
-%% MAKE SURE THERE IS NO SPACE AFTER THE FINAL NAME IN YOUR \mynames LIST
-
-% Change the fonts if you want
-\ifxetexorluatex % If you're using XeLaTeX or LuaLaTeX
-  \usepackage{fontspec} 
-  %% You can use \setmainfont etc; I'm just using these font packages here because they provide OpenType fonts for use by XeLaTeX/LuaLaTeX anyway
-  \usepackage[p,osf,swashQ]{cochineal}
-  \usepackage[medium,bold]{cabin}
-  \usepackage[varqu,varl,scale=0.9]{zi4}
-\else % If you're using pdfLaTeX or latex
-  \usepackage[T1]{fontenc}
-  \usepackage[p,osf,swashQ]{cochineal}
-  \usepackage{cabin}
-  \usepackage[varqu,varl,scale=0.9]{zi4}
-\fi
-
-% Change the page margins if you want
-% \geometry{left=1cm,right=1cm,top=1.5cm,bottom=1.5cm}
-
-% Change the colours if you want
-% \definecolor{SwishLineColour}{HTML}{00FFFF}
-% \definecolor{MarkerColour}{HTML}{0000CC}
-
-% Change the item prefix marker if you want
-% \prefixmarker{$\diamond$}
-
-%% Photo is only shown if "fullonly" is included
-\includecomment{fullonly}
-% \excludecomment{fullonly}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-\leftheader{%
-  {\LARGE\bfseries\sffamily Your Name Here, Ph.D.}
-
-  \makefield{\faEnvelope[regular]}{\href{mailto:example@gmail.com}{\texttt{example@gmail.com}}}
-  % fontawesome5 doesn't have the X icon so we use
-  % the simpleicons package here instead; but some 
-  % font size adjustment might be needed
-  \makefield{{\scriptsize\simpleicon{x}}}{\!\href{https://x.com/overleaf_example}{\texttt{@overleaf\_example}}}
-  \makefield{\faLinkedin}
-  {\href{http://www.linkedin.com/in/example/}{\texttt{example}}}
-
-  %% Next line
-  \makefield{\faGlobe}{\url{http://example.example.org/}}
-  % You can use a tabular here if you want to line up the fields.
+\newcommand{\area} [2] {
+    \vspace*{-9pt}
+    \begin{verse}
+        \textbf{#1}   #2
+    \end{verse}
 }
 
-\rightheader{~}
-\begin{fullonly}
-\photo[r]{photo}
-\photoscale{0.13}
-\end{fullonly}
+\newcommand{\lineunder} {
+    \vspace*{-8pt} \\
+    \hspace*{-18pt} \hrulefill \\
+}
 
-\title{Curriculum Vitae}
+\newcommand{\header} [1] {
+    {\hspace*{-18pt}\vspace*{6pt} \textsc{#1}}
+    \vspace*{-6pt} \lineunder
+}
 
-\begin{document}
-\makeheaders[c]
+\newcommand{\employer} [3] {
+    { \textbf{#1} (#2)\\ \underline{\textbf{\emph{#3}}}\\  }
+}
 
-\makerubric{employment}
-\makerubric{education}
+\newcommand{\contact} [3] {
+    \vspace*{-10pt}
+    \begin{center}
+        {\Huge \scshape {#1}}\\
+        #2 \\ #3
+    \end{center}
+    \vspace*{-8pt}
+}
 
-% If you're not a researcher nor an academic, you probably don't have any publications; delete this line.
-%% Sometimes when a section can't be nicely modelled with the \entry[]... mechanism; hack our own and use \input NOT \makerubric
-\input{publications}
+\newenvironment{achievements}{
+    \begin{list}
+        {$\bullet$}{\topsep 0pt \itemsep -2pt}}{\vspace*{4pt}
+    \end{list}
+}
 
-\makerubric{skills}
-\makerubric{misc}
+\newcommand{\schoolwithcourses} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+    \vspace*{5pt}
+}
 
-\makerubric{referee}
-% \input{referee-full}
+\newcommand{\school} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+}
+% END RESUME DEFINITIONS %%%%%%%%%%%%%%%%%%%%%%%
 
+    \begin{document}
+\vspace*{-40pt}
+
+    
+
+%==== Profile ====%
+\vspace*{-10pt}
+\begin{center}
+	{\Huge \scshape {AKOUMAH Djidoula Esaïe}}\\
+	Lomé $\cdot$ esaieakoumah@gmail.com $\cdot$ (228) 71672544 $\cdot$ https://www.linkedin.com/in/esa\%C3\%AFe-akoumah-59288935a/\\
+\end{center}
+\vspace{0,5cm}
+
+%==== Education ====%
+\header{Éducation}
+\vspace{5mm}
+
+\textbf{CERME, Université de Lomé}\hfill Lomé, Togo\\
+Master Materials science \hfill Janvier 2026 - Présent\\
+\vspace{2mm}
+\textbf{Université de Lomé}\hfill Lomé, Togo\\
+Licence Physique Fondamentale \hfill  - Décembre 2024\\
+\vspace{2mm}
+\textbf{Lycée du 2 Février}\hfill Lomé, Togo\\
+Baccalauréat Scientifique \hfill  - Juillet 2017\\
+\vspace{0,5cm}
+
+%==== Experience ====%
+\header{Expérience Professionelle}
+\vspace{5mm}
+
+\textbf{LAN\textquotesingle{}MÉXIN} \hfill Lomé, Togo\\
+\textit{Vice Chef Projet} \hfill Février 2026 - Présent\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+	\item Gérer les sous-projets afin d\textquotesingle{}atteindre les objectifs convenus.
+	\item Élaborer des rapports réguliers et complets sur l\textquotesingle{}avancement du sous-projet afin d\textquotesingle{}en informer le chef de projet.
+\end{itemize}
+\textbf{Freelance} \hfill Lomé, Togo\\
+\textit{Tuteur en Mathématiques et en Physiques} \hfill 2021 - Présent\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+	\item J\textquotesingle{}aiDispensation des cours particuliers personnalisés en physique et en mathématiques.
+	\item Amélioration des performances scolaires des apprenants grâce à un soutien structuré
+\end{itemize}
+\vspace{0,5cm}
+
+\header{Compétences}
+\vspace{5mm}
+
+\begin{tabular}{ l l }
+	Languages de Programmation: & Python, Fortran, Latex                  \\
+	Outils:                     & Canva, Git \& Github, Spyder, Codeblock \\
+	Marketing Numérique:       & Agile, Cascade, Reseaux Sociaux         \\
+	Bureautique:                & Microsft Office, Google Workspace       \\
+\end{tabular}
+\vspace{0,5cm}
+
+\header{Projets}
+\vspace{5mm}
+
+{\textbf{LAN\textquotesingle{}MÉXIN}} {\sl Google Workspace, Canva} \\
+Master Class Sport santé pour séniors\\
+\vspace*{2mm}
+{\textbf{Séchoire Solaire}}\\
+Conception d\textquotesingle{}un séchoir solaire ergonomique\\
+\vspace*{2mm}
+
+
+
+\ 
 \end{document}
